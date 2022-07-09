@@ -23,6 +23,8 @@ body.typora-export { padding-left: 30px; padding-right: 30px; }
   body.typora-export { padding-left: 0px; padding-right: 0px; }
   #write { padding-left: 20px; padding-right: 20px; }
 }
+
+
 #write li > figure:last-child { margin-bottom: 0.5rem; }
 #write ol, #write ul { position: relative; }
 img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
@@ -131,7 +133,7 @@ a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; 
 .footnote-line a:not(.reversefootnote) { color: inherit; }
 .md-attr { display: none; }
 .md-fn-count::after { content: "."; }
-code, pre, samp, tt { font-family: var(--monospace); }
+code, pre, samp, tt { font-family: "JetBrains Mono"; }
 kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
 .md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
 code { text-align: left; }
@@ -148,6 +150,8 @@ mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); }
 .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
 .md-expand mark .md-meta { opacity: 0.3 !important; }
 mark .md-meta { color: rgb(0, 0, 0); }
+
+
 @media print {
   .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
 }
@@ -227,19 +231,27 @@ mark .md-meta { color: rgb(0, 0, 0); }
     border-color: #313d50 !important;
 }
 
+
+
 html {
     background: #f7e7c3;
     font-size: 0.925rem;
 }
 
+
 body {
     background: #f7e7c3;
     color: #333333;
-    font-family: "Mono", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "JetBrainsMono-Regular", "Mono", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1em;
     height: 100%;
     line-height: 1.6;
 }
+
+
+
+
+
 
 #write {
     background: #f7e7c3;
@@ -299,6 +311,8 @@ body {
 
 
 
+
+
 hr {
     background-color: rgba(213, 163, 11, 0.57);
     border: 0 none;
@@ -323,6 +337,14 @@ ul:last-child,
 ol:last-child {
     margin-bottom: 0;
 }
+
+
+
+
+
+
+
+
 /* #write > .ul-list {
     list-style: none !important;
 }
@@ -1448,10 +1470,39 @@ p>.md-image:only-child:not(.md-img-error) img, p>img:only-child{
     opacity: 1;
 }
 
+
+@font-face {
+    font-family: 'Mono';
+    font-style: normal;
+    font-weight: normal;
+    src: url("./scrolls/JetBrainsMono-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'Mono';
+    font-style: italic;
+    font-weight: normal;
+    src: url("./scrolls/JetBrainsMono-Italic.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'Mono';
+    font-style: normal;
+    font-weight: bold;
+    src: url("./scrolls//JetBrainsMono-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'Mono';
+    font-style: italic;
+    font-weight: bold;
+    src: url("./scrolls/JetBrainsMono-ExtraBoldItalic.woff2") format("woff2");
+
+
  @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}
 </style><title>index</title>
 </head>
 <body class='typora-export'><div class='typora-export-content'>
-<div id='write'  class=''><h1 id='title'><span>Title</span></h1><p><span>Hey there, I’m a Data Science MSc student at the University of Trento, Italy.</span></p><p><span>Here’s a hub to all my important links:</span></p><p><a href='https://github.com/synchroazel'><span>/github</span></a></p><p><a href='https://www.linkedin.com/in/antonio-padalino/'><span>/linkedin</span></a></p><p>&nbsp;</p></div></div>
+<div id='write'  class=''><h1 id='title'><span>Title</span></h1><p><span>Hey there, I’m a Data Science MSc student at the University of Trento, Italy.</span></p><p><span>Here’s a hub to all my important links:</span></p><p><a href='https://github.com/synchroazel'><span>/github</span></a></p><p><a href='https://www.linkedin.com/in/antonio-padalino/'><span>/linkedin</span></a></p><p>&nbsp;</p><p>&nbsp;</p></div></div>
 </body>
 </html>
