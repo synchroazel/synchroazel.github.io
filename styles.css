@@ -128,10 +128,42 @@ body.typora-export {
 	position: relative;
 }
 
+.cell {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+}
+
+.content {
+    padding: 0px 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#flex-text {
+    width: 400px;
+}
+
+
 img {
 	max-width: 100%;
 	vertical-align: middle;
 	image-orientation: from-image;
+
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+    z-index: 1;
+
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.25);
+    -khtml-box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
 button, input, select, textarea {
